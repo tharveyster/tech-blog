@@ -13,9 +13,11 @@
   <div class="flex-column justify-space-around">
     <header class="display-flex justify-space-between align-center p-2">
       <h1>
-        <a href="/">Test Link</a>
+        Tech Blog
       </h1>
       <nav>
+        <button class="no-button" id="home">Home</button>
+        <button class="no-button" id="dashboard">Dashboard</button>
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
         <button class="no-button" id="logout">logout</button>
