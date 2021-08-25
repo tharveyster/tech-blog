@@ -2,9 +2,28 @@ header, .project:not(:last-child) {
   border-bottom: 1px solid #ccc;
 }
 
+header {
+  padding-left:20px;
+  background-color: #2d3e50;
+  color: #fff;
+}
+
+header h1 {
+  color: #2d3e50;
+  background-color: #fff;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 1px 1px #ccc, 2px 2px #999, 3px 3px #666, 4px 4px #333, 5px 5px #222;
+}
+
 nav {
-  float: left;
   font-size: 25px;
+  padding: 10px 0;
+}
+
+nav button {
+  margin-right: 50px;
 }
 
 .no-button {
@@ -12,13 +31,17 @@ nav {
   border: none;
   padding: 0;
   cursor: pointer;
-  color: #1b89bc;
+  color: #2c9acd;
   text-decoration: none;
   font-size: 100%;
 }
 
-.no-button:hover {
-  color: #065b83;
+.no-button a {
+  color: #2c9acd;
+}
+
+.no-button a:hover {
+  color: #5fcdff;
   text-decoration: underline;
 }
 
@@ -33,7 +56,7 @@ nav {
 
 .postCardHeader {
   background-color: #2d3e50;
-  color: white;
+  color: #fff;
   padding: 15px;
   height: 60px;
 }
