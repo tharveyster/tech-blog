@@ -1,12 +1,11 @@
-<div class="text-center">
+{{#if posts.length}}
+<div class="dashboardPosts">
 {{#each posts as |post| }}
-  <h2>{{title}}</h2>
-  <p>{{content}}</p>
-  <p>
-    <button class="btn btn-primary">Update</button>
-  </p>
-  <p>
-    <button class="btn btn-primary">Delete</button>
-  </p>
+  <button class="btn btn-secondary btn-lg btn-block dashBtn"><a href="/edit-post/{{id}}"><span class="dashPost">{{title}}</span><span class="dashDate">{{format_date date_created}}</span></a></button>
 {{/each}}
 </div>
+{{/if}}
+
+  <p class="centered">
+    <button class="btn btn-primary">New Post</button> <!-- TODO - Add the link to the create post page -->
+  </p>

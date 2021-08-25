@@ -21,3 +21,60 @@ nav {
   color: #065b83;
   text-decoration: underline;
 }
+
+.postCard {
+  border: 3px solid #2d3e50;
+  margin-bottom: 10px;
+}
+
+.postCard a {
+  color: #fff;
+}
+
+.postCardHeader {
+  background-color: #2d3e50;
+  color: white;
+  padding: 15px;
+  height: 60px;
+}
+
+.postCardTitle {
+  float: left;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.postCardDate {
+  float: right;
+  vertical-align:text-bottom;
+}
+
+.postCardBody {
+  padding: 10px;
+}
+
+.postCardBody p {
+  margin-bottom: 0;
+}
+
+.dashboardPosts a {
+  color: #000;
+}
+
+.dashPost {
+  float: left;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.dashDate {
+  float: right;
+}
+
+.dashBtn {
+  margin-bottom: 10px;
+}
+
+.centered {
+  text-align: center;
+}
