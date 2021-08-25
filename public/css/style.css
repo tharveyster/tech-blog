@@ -4,6 +4,7 @@ header, .project:not(:last-child) {
 
 nav {
   float: left;
+  font-size: 25px;
 }
 
 .no-button {
