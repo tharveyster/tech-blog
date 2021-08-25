@@ -1,6 +1,6 @@
 [
   {
-    "title": "D-oh!",
+    "title": "D'oh!",
     "content": "They said they'd fire me if I showed up late again, so I'm just not going.",
     "user_id": 1
   },
@@ -13,5 +13,10 @@
     "title": "Flubber",
     "content": "Pi is exactly 3!!!",
     "user_id": 3
+  },
+  {
+    "title": "Coding Rocks!",
+    "content": "I love coding, but only when I'm working on my own projects",
+    "user_id": 4
   }
 ]

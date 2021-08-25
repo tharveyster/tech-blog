@@ -3,18 +3,30 @@ header, .project:not(:last-child) {
 }
 
 header {
-  padding-left:20px;
+  padding-left: 35px;
   background-color: #2d3e50;
   color: #fff;
 }
 
 header h1 {
   color: #2d3e50;
-  background-color: #fff;
   display: inline-block;
-  padding: 5px;
-  border-radius: 10px;
-  box-shadow: 1px 1px #ccc, 2px 2px #999, 3px 3px #666, 4px 4px #333, 5px 5px #222;
+  padding-top: 5px;
+  margin-bottom: 10px;
+}
+
+.word {
+  white-space: nowrap;
+}
+
+.keyboard {
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 1px 1px #ccc, 2px 2px #999, 3px 3px #666, 4px 4px #333, 5px 5px 3px #222;
+  width: 45px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 nav {
@@ -47,7 +59,7 @@ nav button {
 
 .postCard {
   border: 3px solid #2d3e50;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .postCard a {
@@ -58,7 +70,8 @@ nav button {
   background-color: #2d3e50;
   color: #fff;
   padding: 15px;
-  height: 60px;
+  height: 50px;
+  line-height: 15px;
 }
 
 .postCardTitle {
@@ -73,7 +86,7 @@ nav button {
 }
 
 .postCardBody {
-  padding: 10px;
+  padding: 15px;
 }
 
 .postCardBody p {
