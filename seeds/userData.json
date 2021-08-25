@@ -1,0 +1,14 @@
+[
+  {
+    "email": "homer@simpsons.com",
+    "password": "password12345"
+  },
+  {
+    "email": "ned_flanders@gmail.com",
+    "password": "password12345"
+  },
+  {
+    "email": "professor_frink@hoivinmaven.com",
+    "password": "password12345"
+  }
+]
