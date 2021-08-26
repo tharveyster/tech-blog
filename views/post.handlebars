@@ -1,7 +1,19 @@
 {{> postcard}}
 
 {{#if logged_in}}
+<div class="postCard">
+  <div class="postCardHeader">
+    Leave a Comment
+  </div>
+  <div class="postCardBody">
+    <textarea class="form-control" rows="3"></textarea>
+  </div>
+</div>
   <p class="centered">
-    <button class="btn btn-primary">Comment</button> <!-- TODO - Add link to the comment page -->
+    <button class="btn btn-primary">Submit</button>
   </p>
 {{/if}}
+
+<!-- TODO - Add comments to page here -->
+
+<!-- TODO - Add script for posting comments here -->

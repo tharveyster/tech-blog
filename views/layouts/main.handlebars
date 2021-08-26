@@ -17,7 +17,7 @@
         <button class="no-button" id="dashboard"><a href="/dashboard">Dashboard</a></button>
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
-        <button class="no-button" id="logout">Logout</button>
+        <button class="no-button" id="logout"><a href="/logout">Logout</a></button>
         {{else}}
         <button class="no-button" id="login"><a href="/login">Login</a></button>
         {{/if}}

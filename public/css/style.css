@@ -114,3 +114,8 @@ nav button {
 .centered {
   text-align: center;
 }
+
+textarea {
+  width: 100%;
+  resize: none;
+}
