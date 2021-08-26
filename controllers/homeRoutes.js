@@ -38,6 +38,11 @@ router.get('/post/:id', async (req, res) => {
       ],
     });
 
+    if (!postData) {
+      res.render('404');
+      return;
+    }
+
     const post = postData.get({ plain: true });
 
     res.render('post', {
@@ -111,6 +116,11 @@ router.get('/edit-post/:id', async (req, res) => {
         }
       }]
     });
+
+    if (!editPostData) {
+      res.render('404');
+      return;
+    }
 
     const post = editPostData.get({ plain: true });
 
