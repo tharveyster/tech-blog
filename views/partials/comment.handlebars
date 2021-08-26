@@ -1,0 +1,12 @@
+{{#each this}}
+<div class="postCard">
+  <div class="postCardHeader">
+    <div class="postCardTitle"></div>
+    <div class="postCardDate"></div>
+  </div>
+  <div class="postCardBody">
+    <p>{{content}}</p>
+    <p>- {{user.username}} on {{date_created}}</p>
+  </div>
+</div>
+{{/each}}

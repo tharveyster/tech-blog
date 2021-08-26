@@ -6,14 +6,18 @@
     Leave a Comment
   </div>
   <div class="postCardBody">
-    <textarea class="form-control" rows="3"></textarea>
+    <form class="comment-form">
+      <textarea id="commentText" class="form-control" rows="3"></textarea>
+      <p class="centered">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </p>
+    </form>
   </div>
 </div>
-  <p class="centered">
-    <button class="btn btn-primary">Submit</button>
-  </p>
 {{/if}}
 
-<!-- TODO - Add comments to page here -->
+{{> comment post.comment}}
 
-<!-- TODO - Add script for posting comments here -->
+{{#if logged_in}}
+  <script src="../js/comment.js"></script>
+{{/if}}

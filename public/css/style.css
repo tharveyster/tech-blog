@@ -115,7 +115,10 @@ nav button {
   text-align: center;
 }
 
-textarea {
+.form-control {
   width: 100%;
+}
+
+textarea {
   resize: none;
 }
