@@ -117,6 +117,7 @@ nav button {
 
 .form-control {
   width: 100%;
+  margin-bottom: 10px;
 }
 
 textarea {
