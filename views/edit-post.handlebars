@@ -3,18 +3,18 @@
     <div class="postCardTitle">Edit Post</div>
   </div>
   <div class="postCardBody">
-    <form id="newPost" class="comment-form">
+    <form id="viewPost" class="comment-form">
     <p>Title</p>
-    <input id="newPostTitle" class="form-control" value="{{title}}" />
+    <input id="viewPostTitle" class="form-control" value="{{title}}" />
     <p>Content</p>
-    <textarea id="newPostText" class="form-control" rows="3">{{content}}</textarea>
+    <textarea id="viewPostText" class="form-control" rows="3">{{content}}</textarea>
     <p class="centered">
-      <button type="submit" id="updatePostBtn" class="btn btn-primary">Update Post</button>
-      <button type="submit" id="deletePostBtn" class="btn btn-primary">Delete</button>
+      <button id="updatePostBtn" class="btn btn-primary">Update Post</button>
+      <button id="deletePostBtn" class="btn btn-primary">Delete</button>
     </p>
     </form>
   </div>
 </div>
 
-<!--<script src="../js/updatePost.js"></script>-->
+<script src="../js/updatePost.js"></script>
 <script src="../js/deletePost.js"></script>
