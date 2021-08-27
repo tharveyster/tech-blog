@@ -1,7 +1,7 @@
 {{#if posts.length}}
 <div class="dashboardPosts">
 {{#each posts as |post| }}
-  <button class="btn btn-secondary btn-lg btn-block dashBtn"><a href="/edit-post/{{id}}"><span class="dashPost">{{title}}</span><span class="dashDate">{{format_date date_created}}</span></a></button>
+  <a href="/edit-post/{{id}}"><button class="btn btn-secondary btn-lg btn-block dashBtn"><span class="dashPost">{{title}}</span><span class="dashDate">{{format_date date_created}}</span></button></a>
   <!-- TODO - Create the edit post route -->
   <!-- TODO - Create the edit post page -->
 {{/each}}
