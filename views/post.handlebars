@@ -1,5 +1,7 @@
+<!-- Show the blog post -->
 {{> postcard}}
 
+<!-- Show the add comment card if the user is logged in -->
 {{#if logged_in}}
 <div class="postCard">
   <div class="postCardHeader">
@@ -16,8 +18,10 @@
 </div>
 {{/if}}
 
+<!-- Show the comments for this post -->
 {{> comment}}
 
+<!-- Only run the comment script if the user is logged in -->
 {{#if logged_in}}
   <script src="../js/comment.js"></script>
 {{/if}}

@@ -1,9 +1,11 @@
 const newPostFormHandler = async (event) => {
   event.preventDefault();
 
+  // Collect values from the new post form
   const title = document.querySelector('#newPostTitle').value.trim();
   const content = document.querySelector('#newPostText').value.trim();
 
+  // Create a new post if both fields contain content
   if (title && content) {
     const response = await fetch('/api/posts', {
       method: 'POST',
@@ -11,6 +13,7 @@ const newPostFormHandler = async (event) => {
       headers: { 'Content-Type': 'application/json'},
     });
 
+    // If successful return the browser to the dashboard
     if (response.ok) {
       document.location.replace('/dashboard');
     } else {

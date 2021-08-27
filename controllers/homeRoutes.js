@@ -2,6 +2,7 @@ const router = require('express').Router();
 const { Post, User, Comment } = require('../models');
 const withAuth = require('../utils/auth');
 
+// Get all posts route
 router.get('/', async (req, res) => {
   try {
     const postData = await Post.findAll({
@@ -24,6 +25,7 @@ router.get('/', async (req, res) => {
   }
 });
 
+// Get post by id route
 router.get('/post/:id', async (req, res) => {
   try {
     const postData = await Post.findByPk(req.params.id, {
@@ -59,10 +61,9 @@ router.get('/post/:id', async (req, res) => {
   }
 });
 
-// Use withAuth middleware to prevent access to route
+// Get dashboard by user id route
 router.get('/dashboard', withAuth, async (req, res) => {
   try {
-    // Find the logged in user based on the session ID
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ['password'] },
       include: [{ model: Post }],
@@ -79,8 +80,8 @@ router.get('/dashboard', withAuth, async (req, res) => {
   }
 });
 
+// Log in if not already logged in route
 router.get('/login', (req, res) => {
-  // If the user is already logged in, redirect the request to another route
   if (req.session.logged_in) {
     res.redirect('/');
     return;
@@ -89,10 +90,12 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
+// New post creation page route
 router.get('/new-post', (req, res) => {
   res.render('new-post');
 });
 
+// Edit post page route
 router.get('/edit-post/:id', async (req, res) => {
   try {
     const editPostData = await Post.findByPk(req.params.id, {

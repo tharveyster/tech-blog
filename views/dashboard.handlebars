@@ -1,13 +1,13 @@
+<!-- Show a list of posts if there's at lease one available -->
 {{#if posts.length}}
 <div class="dashboardPosts">
 {{#each posts as |post| }}
   <a href="/edit-post/{{id}}"><button class="btn btn-secondary btn-lg btn-block dashBtn"><span class="dashPost">{{title}}</span><span class="dashDate">{{format_date date_created}}</span></button></a>
-  <!-- TODO - Create the edit post route -->
-  <!-- TODO - Create the edit post page -->
 {{/each}}
 </div>
 {{/if}}
 
+<!-- Create new post button -->
   <p class="centered">
     <button class="btn btn-primary"><a href="/new-post">New Post</a></button>
   </p>
