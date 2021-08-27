@@ -1,4 +1,4 @@
-{{#each this}}
+{{#each comments as |comment|}}
 <div class="postCard">
   <div class="postCardHeader">
     <div class="postCardTitle"></div>
@@ -6,7 +6,7 @@
   </div>
   <div class="postCardBody">
     <p>{{content}}</p>
-    <p>- {{user.username}} on {{date_created}}</p>
+    <p>- {{user.username}} on {{format_date date_created}}</p>
   </div>
 </div>
 {{/each}}
