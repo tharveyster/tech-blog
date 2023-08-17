@@ -4,14 +4,11 @@
 ## Description
 This project is a technology blog that allows users to create accounts, view posts created by other users, create, update, and delete their own posts, and comment on other user's posts. It was created using HTML, CSS, JavaScript, Node.js, Express.js, Handlebars.js, MySQL, BCrypt, Sequelize, and Sequelize Session.
 
-## Deployed Link
-This app has been deployed to Heroku at [this link](https://shrouded-coast-39041.herokuapp.com/).
-
 ## Screenshot
 ![The Tech Blog is an application where you can create an account, create/update/delete posts, and comment on other user's posts.](./assets/images/tech-blog-screenshot.png)
 
 ## Questions
-If you have questions about this repo, open an issue or contact me directly at todd@theharveysplace.com. You can find more of my work at [tharveyster](https://github.com/tharveyster).
+If you have questions about this repo, open an issue or contact me directly at todd@weloveeats.com. You can find more of my work at [tharveyster](https://github.com/tharveyster).
 
 ## License
 ISC
